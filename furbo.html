@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+h1 {
+    background-color: #e3d7d7;
+    color: rgb(30, 4, 4);
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+footer {
+    margin-top: 20px;
+}
+
+
+#futbol-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+#futbol-link:hover {
+    text-decoration: underline;
+}
+
+
+.tablas-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+.equipo {
+    border-collapse: collapse;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #000;
+    table-layout: fixed;
+}
+
+
+.equipo th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+.equipo td {
+    text-align: center;
+    padding: 10px;
+    border: 4px solid #0d0202;
+    width: 16.66%;
+    box-sizing: border-box;
+}
+
+
+.equipo td img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+#sevilla {
+    background-color: #cc3333;
+}
+
+
+#sevilla td {
+    background-color: #ff6666;  
+}
+
+
+#betis {
+    background-color: #077009;  
+}
+
+
+#betis td {
+    background-color: #66cc66;  
+}
+#sevilla th {
+            background-color: red; /* Fondo rojo */
+            border: 4px solid darkred; /* Borde rojo oscuro */
+            color: white;
+        }
+
+
+        #betis th {
+            background-color: green; /* Fondo verde */
+            border: 4px solid darkgreen; /* Borde verde oscuro */
+            color: white;
+        }
+
+.enlace-imagen {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}  
+</style>
+</head>
+<body>
+    <h1>Equipos de Fútbol</h1>
+
+
+    <div class="tablas-container">
+        <table class="equipo" id="sevilla">
+            <tr>
+                <th colspan="6">Sevilla FC</th>
+            </tr>
+            <tr>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p17740/1024x1024/p17740_t179_2024_1_002_000.jpg" alt="Jugador 1"><br>Jesus Navas</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p89335/1024x1024/p89335_t179_2024_1_003_000.png" alt="Jugador 2"><br>Saul Niguez</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p173515/2048x2048/p173515_t179_2024_1_002_000.jpg" alt="Jugador 3"><br>Kelechi Iheanacho</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p250437/1024x1024/p250437_t179_2024_1_003_000.png" alt="Jugador 4"><br>Chidera Ejuke</td>
+                <td><img src="https://www.directvsports.com/__export/1712862123879/sites/dsports/img/2024/04/11/i_-1-.png_824189959.png" alt="Jugador 5"><br>Valentín Barco</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p500267/2048x2048/p500267_t179_2024_1_002_000.jpg" alt="Jugador 6"><br>Loïc Badé</td>
+            </tr>
+            <tr>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p610206/1024x1113/p610206_t179_2024_1_001_000.png" alt="Jugador 7"><br>Isaac Romero</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p218430/2048x2048/p218430_t179_2024_1_002_000.jpg" alt="Jugador 8"><br>Gonzalo Montiel</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p182816/1024x1113/p182816_t179_2024_1_001_000.png" alt="Jugador 9"><br>Marcão do Nascimento</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p219002/1024x1024/p219002_t179_2024_1_003_000.png" alt="Jugador 10"><br>Dodi Lukebakio</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p493086/2048x2048/p493086_t179_2024_1_002_000.jpg" alt="Jugador 11"><br>Peque</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t179/p98770/1024x1113/p98770_t179_2024_1_001_000.png" alt="Jugador 12"><br>Ørjan Nyland</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <a href="https://sevillafc.es/">
+                        <img src="https://logodownload.org/wp-content/uploads/2018/11/sevilla-fc-logo-1.png" alt="Fútbol" class="enlace-imagen">
+                    </a>
+                </td>
+            </tr>
+
+
+        </table>
+
+
+        <table class="equipo" id="betis">
+            <tr>
+                <th colspan="6">Real Betis Balompié</th>
+            </tr>
+            <tr>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p554806/1024x1113/p554806_t185_2024_1_001_000.png" alt="Jugador 1"><br>Victor</td>
+                <td><img src="https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--b66fc624-e1b4-4a4b-b2ac-1bdfc44cbd46/_330782135321.app.webp?preferwebp=true&width=312" alt="Jugador 2"><br>Isco</td>
+                <td><img src="https://pbs.twimg.com/media/GXyGmg3W0AApKTD?format=jpg&name=large" alt="Jugador 3"><br>Giovani</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p500745/1024x1113/p500745_t185_2024_1_001_000.png" alt="Jugador 4"><br>Ez Abde</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p98745/2048x2048/p98745_t185_2024_1_002_000.jpg" alt="Jugador 5"><br>Hector Bellerin</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p488662/1024x1113/p488662_t185_2024_1_001_000.png" alt="Jugador 6"><br>Johnny Cardoso</td>
+            </tr>
+            <tr>
+                <td><img src="https://img.a.transfermarkt.technology/portrait/big/127048-1563441766.jpg?lm=1" alt="Jugador 7"><br>Cédric Bakambu</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p448085/1024x1113/p448085_t185_2024_1_001_000.png" alt="Jugador 8"><br>Natan Bernardo</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p217593/2048x2048/p217593_t185_2024_1_002_000.jpg" alt="Jugador 9"><br>Pablo Fornarls</td>
+                <td><img src="https://files.cdn-files-a.com/uploads/1568335/800_66ddc83ef24d5.png" alt="Jugador 10"><br>Rui Silva</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p149915/1024x1113/p149915_t185_2024_1_001_000.png" alt="Jugador 11"><br>Diego Llorente</td>
+                <td><img src="https://assets.laliga.com/squad/2024/t185/p205992/1024x1113/p205992_t185_2024_1_001_000.png" alt="Jugador 12"><br>Chimy Ávila</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <a href="https://www.realbetisbalompie.es/">
+                        <img src="https://logodownload.org/wp-content/uploads/2023/05/real-betis-logo.png" alt="Fútbol" class="enlace-imagen">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+   
+    <footer>
+        <a href="futbol.html" id="futbol-link">Fútbol</a>
+    </footer>
+</body>
+</html>
+
+
