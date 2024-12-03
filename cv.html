@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Curriculum</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .table-container {
+            width: 45%;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Primera columna: color de fondo rosa */
+        .table-container:first-child {
+            background-color: #ffb5ed;
+        }
+
+        /* Segunda columna: color de fondo naranja */
+        .table-container:last-child {
+            background-color: #ffcc99;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #160808;
+        }
+
+        .highlight {
+            background-color: #5f97e4;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .titulo {
+            font-weight: bold;
+        }
+
+        .personal-info, .extras, .contact, .languages {
+            background-color: #ffcccb;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .languages {
+            background-color: #ffeb99;
+        }
+
+        .enlace {
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .enlace:hover {
+            background-color: yellow;
+            color: #000;
+        }
+
+        /* Transformación */
+        .transformed {
+            transition: transform 0.3s;
+        }
+
+        .transformed:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>CURRICULUM</h3>
+
+    <div id="container">
+        <!-- Primera columna -->
+        <div class="table-container">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="nombre">Escribe tu nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" maxlength="30"/>
+                    </td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaWJibmdt2yjA7hZpUdpPpL0HneTxiVxtAg&s"
+                            width="150" height="150" alt="Foto de perfil"/>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="personal-info">
+                <h3 class="titulo">Datos personales</h3>
+                <label for="experiencia">Selecciona tus años de experiencia:</label><br>
+
+                <input type="radio" id="experiencia1" name="experiencia" value="2-3 años" checked>
+                <label for="experiencia1">2-3 años</label><br>
+
+                <input type="radio" id="experiencia2" name="experiencia" value="nada">
+                <label for="experiencia2">Nada</label><br>
+
+                <input type="radio" id="experiencia3" name="experiencia" value="+ de 5 años">
+                <label for="experiencia3">Más de 5 años</label>
+            </div>
+
+            <div class="languages">
+                <h3 class="titulo">Idiomas</h3>
+                <label for="idiomas">Escribe tus idiomas y niveles:</label><br>
+                <textarea id="idiomas" name="idiomas" rows="5" placeholder="Ejemplo: Inglés - Hablado: Alto, Escrito: Medio"></textarea><br>
+            </div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="table-container">
+            <div class="extras">
+                <h3 class="titulo">Introduce tus datos académicos</h3>
+                <label for="estudios1">Escribe tus primeros estudios:</label><br>
+                <input type="text" id="estudios1" name="estudios1" maxlength="30"/><br><br>
+
+                <label for="estudios2">Escribe tus estudios obligatorios:</label><br>
+                <input type="text" id="estudios2" name="estudios2" maxlength="30"/><br><br>
+
+                <label for="estudios3">Escribe si tienes algún estudio post-obligatorio:</label><br>
+                <input type="text" id="estudios3" name="estudios3" maxlength="30"/>
+            </div>
+            <div class="contact">
+                <h3 class="titulo">Contacto</h3>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com"/><br><br>
+
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="calle" name="calle" placeholder="Calle" required/><br>
+                <input type="number" id="numero" name="numero" placeholder="Número" required/><br>
+                <input type="text" id="piso" name="piso" placeholder="Piso"/><br>
+                <input type="text" id="letra" name="letra" placeholder="Letra"/><br>
+                <input type="text" id="cp" name="cp" placeholder="Código Postal" required/><br>
+                <input type="text" id="provincia" name="provincia" placeholder="Provincia" required/>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight transformed">
+        <h3>Visita mi web</h3>
+        <a href="https://1daw-lucialag459.github.io/1DAW-lucialag459/" class="enlace" target="_blank">Haz clic aquí para ver mi web personal</a>
+    </div>
+
+</body>
+</html>
+
