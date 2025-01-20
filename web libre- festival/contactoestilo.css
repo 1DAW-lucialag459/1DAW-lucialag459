@@ -1,0 +1,58 @@
+.header {
+    text-align: center;
+    color: #ecf0f1;
+    padding: 80px;
+    background-image: url('https://queondaus.com/wp-content/uploads/2024/11/Coachella-2025-Festival-de-Musica-.webp');
+    background-size: cover;
+    background-position: top;
+}
+
+.headertexto {
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0.4); /* Azul con opacidad del 40% */
+    padding: 20px; /* Espaciado interno para que el texto no toque los bordes */
+    border-radius: 10px; /* Bordes redondeados opcional */
+    color: white; /* Color del texto para mejor contraste */
+    font-family: Arial, sans-serif; /* Fuente opcional */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+}
+
+.header h1 {
+    margin: 0; /* Elimina el margen por defecto del H1 */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background: #34495e;
+    padding: 10px 0;
+}
+.nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    color: #ff9a8b;
+
+}
+
+
+.formulario {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.formulario input, .formulario select, .formulario textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
