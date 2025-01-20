@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra las entradas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+       }
+        .nav a:hover {
+            color: #ff9a8b;
+    
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(68, 0, 255, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .card .text {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .card h2 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .card p {
+            margin: 10px 0;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff0090;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .card a:hover {
+            background-color: #e6007e;
+        }
+        
+        footer {
+            background-color: rgb(30, 0, 60);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <body style="background-color: #ff9ebf;">
+        <nav class="nav">
+            <a href="festivality- web final.html">Inicio</a>
+            <a href="coachella.html">Coachella</a>
+            <a href="tomorrowland.html">Tomorrowland</a>
+            <a href="Puro Latino">Puro Latino</a>
+            <a href="entradas.html">Entradas</a>
+            <a href="videos.html">Videos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="mapadelsitio.html">Mapa del Sitio</a>
+        </nav>
+    <section class="container">
+ 
+        <div class="card">
+            <img src="logocoachella.jpeg" alt="Coachella">
+            <div class="text">
+                <h2>Coachella</h2>
+                <p>Vive la magia de uno de los festivales más icónicos del mundo, con los mejores artistas y un ambiente único en California.</p>
+                <a href="https://www.coachella.com" target="_blank">Compra tus entradas</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logotomo.jpeg" alt="Tomorrowland">
+            <div class="text">
+                <h2>Tomorrowland</h2>
+                <p>Explora un universo de fantasía musical en Boom, Bélgica, con los mejores DJs del mundo en un evento inolvidable.</p>
+                <a href="https://www.tomorrowland.com" target="_blank">Compra tus entradas</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logopuro.jpeg" alt="Puro Latino">
+            <div class="text">
+                <h2>Puro Latino</h2>
+                <p>Disfruta de los ritmos latinos más vibrantes en España, con artistas de reguetón, trap y música urbana en vivo.</p>
+                <a href="https://www.purolatino.com" target="_blank">Compra tus entradas</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logoprim.jpeg" alt="Primavera Sound">
+            <div class="text">
+                <h2>Primavera Sound</h2>
+                <p>Un festival ecléctico en Barcelona que reúne a artistas de diversos géneros en un entorno espectacular junto al mar.</p>
+                <a href="https://www.primaverasound.com" target="_blank">Compra tus entradas</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="logolola.png" alt="Lollapalooza">
+            <div class="text">
+                <h2>Lollapalooza</h2>
+                <p>Una experiencia global con eventos en ciudades como Chicago, París y Buenos Aires. ¡La música no tiene fronteras!</p>
+                <a href="https://www.lollapalooza.com" target="_blank">Compra tus entradas</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Entradas/Beststicks</p>
+    </footer>
+    
+</body>
+</html>
