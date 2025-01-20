@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(40, 0, 80);
+        color: white;
+    }
+
+    header {
+        background-color: rgb(68, 0, 255);
+        padding: 20px;
+        text-align: center;
+        position: sticky;/*Deja la cabecera quieta cuando haces la transición*/
+        top: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        background: #34495e;
+        padding: 10px 0;
+    }
+    .nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+        transition: color 0.3s;
+   }
+    .nav a:hover {
+        color: #ff9a8b;
+
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        animation: fadeIn 1s ease; /*Animación de pulsar*/
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;/*Salto a la siguiente fila*/
+        justify-content: center;
+        padding: 20px;
+        gap: 20px; /*Espacio entre los contenedores*/
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.5em;
+    }
+
+    .card p {
+        margin: 0;
+    }
+
+    footer {
+        background-color: rgb(30, 0, 60);
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px); /*Posición animación*/
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);/*Posición animación*/
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease; /*Duración de la animación*/
+    }
+    </style>
+</head>
+<body style="background-color: #82026f;">
+    <nav class="nav">
+        <a href="festivality- web final.html">Inicio</a>
+        <a href="coachella.html">Coachella</a>
+        <a href="tomorrowland.html">Tomorrowland</a>
+        <a href="purolatino.html">Puro Latino</a>
+        <a href="entradas.html">Entradas</a>
+        <a href="videos.html">Videos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="mapadelsitio.html">Mapa del Sitio</a>
+    </nav>
+<header>
+    <h1>Puro Latino Festival</h1>
+</header>
+<body>
+    <section class="container">
+        <div class="card fade-in">
+            <img src="escenariopuro.jpeg" alt="Puro Latino Stage">
+            <img src="ubicacionpu.jpeg" alt="Puro Latino Stage">
+            <h2>Ubicación y Escenarios</h2>
+            <p>Puro Latino se celebra en varias ubicaciones de España, como Sevilla, El Puerto de Santa María y Torremolinos. 
+               Cada recinto se prepara con escenarios vibrantes, diseñados para disfrutar de los mejores artistas de música latina. 
+               Vive la experiencia en espacios al aire libre, perfectos para disfrutar del verano y la energía latina.</p>
+        </div>
+        
+        <div class="card fade-in">
+            <img src="publicopu.jpeg" alt="Puro Latino Crowd">
+            <img src="publicopu2.jpg" alt="Puro Latino Crowd">
+            <h2>Público</h2>
+            <p>El público de Puro Latino es apasionado, vibrante y amante de la música urbana. Con una mezcla de generaciones, encontrarás desde jóvenes disfrutando de sus primeras experiencias de festival, hasta adultos que siguen el ritmo del reguetón y trap. 
+               Prepárate para bailar, cantar y compartir momentos inolvidables.</p>
+               <img src="publicopu3.jpeg" alt="Puro Latino Stage">
+        </div>
+        
+        <div class="card fade-in">
+            <img src="ropapu.jpg" alt="Puro Latino Outfit">
+            <img src="ropapu2.jpg" alt="Puro Latino Outfit">
+            <h2>Dress Code</h2>
+            <p>El ambiente del festival invita a lucir tu mejor estilo veraniego. Ropa ligera, colores vivos, gafas de sol y mucho brillo son los favoritos de los asistentes. 
+               No importa cuál sea tu estilo, ¡el objetivo es sentirte cómodo y preparado para disfrutar todo el día!</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="card fade-in">
+            <img src="preciospu.jpeg" alt="Precios">
+            <h2>Precios</h2>
+            <p>Puro Latino es conocido por ser accesible para todos. Las entradas generales suelen rondar entre 40 y 80€, dependiendo de la fecha y la ciudad. 
+               También puedes optar por pases VIP, que incluyen acceso preferente y zonas exclusivas, con precios a partir de 150€.</p>
+            <p>Algunas opciones de alojamiento cercanas:</p>
+            <img src="torresev.jpeg" alt="Alojamiento">
+            <img src="hoteling.jpg" alt="Alojamiento">
+        </div>
+
+        <div class="card fade-in">
+            <h2>Artistas destacados</h2>
+            <p>Puro Latino reúne a los mayores exponentes de la música urbana y latina. Algunos de los artistas más esperados que han pasado por el festival incluyen:</p>
+            <img src="anuelaa.webp" alt="Anuel AA">
+            <img src="bryan.jpeg" alt="Bryant Myers">
+            <img src="mora.jpg" alt="Mora">
+            <img src="morad.jpg" alt="Morad G">
+            <img src="lola.webp" alt="Lola Indigo">
+        </div>
+
+        <div class="card fade-in">
+            <h2>Carteleras y Horarios</h2>
+            <p>Estas son las carteleras de las ediciones anteriores de Puro Latino en distintas ciudades. 
+               Consulta los horarios y asegúrate de no perderte a tus artistas favoritos en la próxima edición.</p>
+            <img src="cartelerapu.jpeg" alt="Cartelera Sevilla 2023">
+            <img src="cartelerapu2.jpeg" alt="Cartelera El Puerto 2023">
+            <img src="cartelerapu3.jpeg" alt="Puro Latino Stage">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Puro Latino/Beststicks</p>
+    </footer>
+    
+    
+</body>
+</html>
